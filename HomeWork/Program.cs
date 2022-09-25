@@ -31,4 +31,24 @@
     }
 }
 
-Polindrom();
+void Zadacha21()
+{
+    Console.WriteLine("Введите координаты первой точки ");
+    Console.WriteLine("X =  ");
+    double x1 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Y =  ");
+    double y1 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Z =  ");
+    double z1 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Введите координаты второй точки ");
+    Console.WriteLine("X =  ");
+    double x2 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Y =  ");
+    double y2 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Z =  ");
+    double z2 = Convert.ToDouble(Console.ReadLine());
+    double Distanse = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2));
+    Console.WriteLine(Distanse);
+}
+
+Zadacha21();
