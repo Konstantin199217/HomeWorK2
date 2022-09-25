@@ -9,7 +9,7 @@
         return num;
     }
     Console.WriteLine("Введите пятизначное число и Мы узнаем является ли оно Полиндромом ");
-    int number = int.Parse(Console.ReadLine());// 1234265735
+    int number = int.Parse(Console.ReadLine());
     if (number < 0) number *= -1;
     if (number > 9999)
     {
