@@ -8,7 +8,7 @@
         }
         return num;
     }
-    Console.WriteLine("Введите пятизначное число");
+    Console.WriteLine("Введите пятизначное число и Мы узнаем является ли оно Полиндромом ");
     int number = int.Parse(Console.ReadLine());// 1234265735
     if (number < 0) number *= -1;
     if (number > 9999)
@@ -21,7 +21,7 @@
         }
         else
         {
-            Console.WriteLine("Не Полиндром");
+            Console.WriteLine("Не Полиндром ");
         }
     }
     else
@@ -33,6 +33,7 @@
 
 void Zadacha21()
 {
+    Console.WriteLine("Узнаем расстояние между двумя точками в пространстве  ");
     Console.WriteLine("Введите координаты первой точки ");
     Console.WriteLine("X =  ");
     double x1 = Convert.ToDouble(Console.ReadLine());
@@ -51,4 +52,19 @@ void Zadacha21()
     Console.WriteLine(Distanse);
 }
 
+void Zadacha23()
+{
+    Console.WriteLine("Введите число и Мы увидем все числа до него в степени 3 ");
+    int number = int.Parse(Console.ReadLine());
+    int[] array = new int[number];
+    for (int i = 1; i <= array.Length; i++)
+    {
+        int n = Convert.ToInt32(Math.Pow(i, 3));
+        Console.WriteLine(n);
+    }
+
+}
+
+Polindrom();
 Zadacha21();
+Zadacha23();
